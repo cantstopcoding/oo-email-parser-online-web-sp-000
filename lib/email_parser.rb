@@ -11,7 +11,7 @@ class EmailAddressParser
     def parse
     # Seperate email addresses either by comma or or empty space 
     # I'm going to use split on the emails to seperate an email by commas first 
-    @emails.split(/, | /).uniq 
+    @emails.split(/,| /).uniq 
     
     # If I get a string of emails that are seperates by, both, spaces and commas, it still parses both commas and and spaces
     # This method removes duplicate emails 
